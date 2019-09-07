@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.llg.oas.persistence.ApproveInstanceUserMapper">
+	<resultMap id="BaseResultMap" type="com.llg.oas.entity.ApproveInstanceUser">
+		<id column="id" jdbcType="INTEGER" property="id" />
+		<result column="approve_instance_id" jdbcType="INTEGER" property="approveInstanceId" />
+		<result column="staff_id" jdbcType="INTEGER" property="staffId" />
+		<result column="num" jdbcType="INTEGER" property="num" />
+		<result column="is_curr" jdbcType="INTEGER" property="isCurr" />
+		<result column="is_approve_person" jdbcType="INTEGER" property="isApprovePerson" />
+		<result column="created_at" jdbcType="TIMESTAMP" property="createdAt" />
+		<result column="updated_at" jdbcType="TIMESTAMP" property="updatedAt" />
+	</resultMap>
+
+	<!--<sql id="Base_Column_List" >
+		id,approve_instance_id,staff_id,num,is_curr,is_approve_person,created_at,updated_at
+	</sql>-->
+
+	<!-- Created by llg on 2018-04-02 22:12:57 -->
+
+</mapper>

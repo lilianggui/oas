@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.llg.oas.persistence.RoleMapper">
+	<resultMap id="BaseResultMap" type="com.llg.oas.entity.Role">
+		<id column="id" jdbcType="INTEGER" property="id" />
+		<result column="company_id" jdbcType="INTEGER" property="companyId" />
+		<result column="role_name" jdbcType="INTEGER" property="roleName" />
+		<result column="status" jdbcType="INTEGER" property="status" />
+		<result column="remark" jdbcType="VARCHAR" property="remark" />
+		<result column="created_by" jdbcType="INTEGER" property="createdBy" />
+		<result column="updated_by" jdbcType="INTEGER" property="updatedBy" />
+		<result column="created_at" jdbcType="TIMESTAMP" property="createdAt" />
+		<result column="updated_at" jdbcType="TIMESTAMP" property="updatedAt" />
+	</resultMap>
+
+	<!--<sql id="Base_Column_List" >
+		id,company_id,role_name,status,remark,created_by,updated_by,created_at,updated_at
+	</sql>-->
+
+	<!-- Created by llg on 2018-04-02 22:13:01 -->
+
+</mapper>

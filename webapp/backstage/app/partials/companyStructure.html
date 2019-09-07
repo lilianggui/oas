@@ -1,0 +1,40 @@
+<div class="companyStructure">
+    <div class="query-form">
+        <form>
+            <label>
+                上级部门:
+                <select>
+                    <option>企划部</option>
+                </select>
+            </label>
+            <label>
+                部门名称:
+                <select >
+                    <option>企划部</option>
+                </select>
+            </label>
+            <input class="aos-btn aos-btn-blue" type="submit" value="搜索">
+            <input class="aos-btn aos-btn-blue" type="reset" value="重置">
+        </form>
+    </div>
+    <div class="operate-bar">
+        <button class="aos-btn aos-btn-blue" id = "createBtn" ng-click="openModal()">新建</button>
+        <button class="aos-btn aos-btn-gray" id = "updateBtn">编辑</button>
+        <button class="aos-btn aos-btn-gray" id = "ableBtn">启用</button>
+        <button class="aos-btn aos-btn-gray" id = "disableBtn">禁用</button>
+        <button class="aos-btn aos-btn-gray" id = "deleteBtn">删除</button>
+    </div>
+    <table class="list-table">
+        <tr><th><input type="checkbox" id = "selectAllOrCancel" ng-click="selectAllOrCancel($event)"></th><th>部门名称</th><th>上级部门</th><th>状态</th><th>备注</th></tr>
+            <tr ng-repeat="d in deptList">
+                <td  ng-click="checkboxClick($event)"><input type="checkbox" name="checkbox"></td>
+                <td>{{ d.deptName }}</td>
+                <td>{{ d.parentDeptId }}</td>
+                <td>{{ d.status }}</td>
+                <td>{{ d.remark }}</td>
+            </tr>
+    </table>
+</div>
+<script>
+
+</script>
